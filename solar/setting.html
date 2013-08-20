@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Solar Smart House</title>
+		<script src="js/settingOnLoad.js"></script>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<link rel="stylesheet" href="settingStyle.css" type="text/css" />	</head>
+		<script src="js/generalFunctions.js"></script>
+	<body>
+		<div>
+			<h3> New User </h3>
+			<form action="php/newUser.php" method="post" >
+			Name: <input type="text" name="name"><br>
+			Phone Id: <input type="text" name="id"><br>
+			scenarioName: <select name="scenarioName" id = "scenarioSelector">
+
+			</select><br>
+			<input class="submit" type="submit">
+			</form>
+		</div>
+		<div>
+			<h3> Remove User </h3>
+			<form action="php/removeUser.php" method="post" >
+			Phone Id: <select name="deletedUserId" id = "deletedUserId">
+
+			</select><br>
+			<input class="submit" type="submit">
+			</form>
+		</div>
+		<div>
+			<h3> Remove Senario </h3>
+			<form action="php/removeSenario.php" method="post" >
+			Senario: <select name="deletedSenarioId" id = "deletedSenarioId">
+
+			</select><br>
+			<input class="submit" type="submit">
+			</form>
+		</div>
+		<div>
+			<h3> House Location </h3>
+			<form action="php/setHouseNZ.php" method="post" >
+			long: <input type="text" name="long"><br>
+			lat: <input type="text" name="lat"><br>
+			<input class="submit" type="submit">
+			</form>
+		</div>
+		<div>
+			<h3> Export History Data </h3>
+			<form action="php/exportData.php" method="post" >
+			The File will be save at the server "history" directory.
+			<input class="submit" type="submit">
+			</form>
+		</div><br><br>
+		<a href="index.html">Back To solar Home</a>
+	</body>
+</html>

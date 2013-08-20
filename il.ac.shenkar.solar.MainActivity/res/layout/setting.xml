@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+   
+	<TextView 
+          android:id="@+id/serverIpText"
+	      android:layout_width="wrap_content"
+	      android:layout_height="wrap_content"
+	      android:gravity="right"
+	      android:text="Server Ip:"/>
+    <EditText
+        android:id="@+id/serverIp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="4dp"
+    	android:hint="Server Ip"/>    	
+
+    <TextView 
+          android:id="@+id/houseIdText"
+	      android:layout_width="wrap_content"
+	      android:layout_height="wrap_content"
+	      android:gravity="right"
+	      android:text="House Id:"/>
+    <EditText
+        android:id="@+id/houseId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="4dp"
+    	android:hint="House Id"/>    	
+    <TextView 
+          android:id="@+id/housePassText"
+	      android:layout_width="wrap_content"
+	      android:layout_height="wrap_content"
+	      android:gravity="right"
+	      android:text="House Passward:"/>
+    <EditText
+        android:id="@+id/housePassward"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="4dp"
+    	android:hint="House Passward"/>    	
+    <TextView 
+          android:id="@+id/simIdText"
+	      android:layout_width="wrap_content"
+	      android:layout_height="wrap_content"
+	      android:gravity="right"
+	      android:text="sim Id:"/>
+    <EditText
+        android:id="@+id/simId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="4dp"
+    	android:hint="Sim Id"/>    	
+    <Button
+        android:id="@+id/saveSettingButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="save"
+        android:onClick="saveSetting" />
+    <Button
+        android:id="@+id/cencelSettingButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="cencel"
+        android:onClick="cencelSetting" />    
+    	 
+</LinearLayout>

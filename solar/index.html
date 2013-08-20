@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Solar Smart House</title>
+		<script src="js/drawFunctions.js"></script>    
+		<script src="js/initHistory.js"></script>
+		<script src="js/generalFunctions.js"></script>
+		<script src="js/component.js"></script>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<link rel="stylesheet" href="style.css" type="text/css" />	</head>
+	<body>
+		<div>
+			<canvas id="canvas" width="1100" height="750">
+			This text is displayed if your browser 
+			does not support HTML5 Canvas.
+			</canvas>
+		</div>
+		<div id = "senarios"><h1>Senarios List</h1>
+			<select id = "senarioSelector">
+			  <option value="open all">Open All</option>
+			  <option value="close all">Close All</option>
+			  <option value="not bed room">Kithchen & Living Room</option>
+			</select>
+			<button id = "doSenario" type="button" onclick="doSenario()">Run Senario</button>
+		</div>
+		<div><h1>Users in the House</h1>
+			<div id = "userList"></div>
+		</div>
+		<br>
+		<a href="setting.html">setting</a>
+	</body>
+</html>

@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+	<head>
+    	<meta charset="UTF-8" />
+		<script src="js/generalFunctions.js"></script>
+		<script src="js/component.js"></script>
+		<script src="js/drawFunctions.js"></script>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<link rel="stylesheet" href="style.css" type="text/css" />
+	</head>
+	<body>
+		<h1 id ="header">Personalize Smart Home Control</h1>
+		<div id="container">
+			<canvas id="canvas" width="960" height="720">
+				This text is displayed if your browser does not support HTML5 Canvas.
+		    </canvas>
+		    <div id = "menu">
+				<div id="autoModePicker">
+					<form id = "autoForm" action="" onclick="changeAutoMode()">
+						<input type="radio" name="autoMode" value="0" checked>Menual<br>
+						<input type="radio" name="autoMode" value="1">Auto Lights only<br>
+						<input type="radio" name="autoMode" value="2">Auto Air Condition only<br>
+						<input type="radio" name="autoMode" value="3">Full Automatic
+					</form>
+				</div>
+				<div id="newlightsScenarion">
+					<h2>Create new light scenario</h2>
+					name: <input type="text" id="ScenarioName"><br>
+					<button type="button" onclick="saveNewScenario()"> save </button>
+				</div>
+				<div id="lightsScenarionPicker">
+					<ul><li><h3>header</h3></li>
+						<li><h4>alon</h4></li>
+						<li><h4>dotan</h4></li>
+					</ul>
+				</div>
+				<div id="personal">
+					<ul><li><h3>Personal Setting</h3></li>
+						<li><h4>edit profile</h4></li>
+						<li><h4>edit timmers</h4></li>
+					</ul>
+				</div>
+				<div id="setup">
+					<ul><li><h3>Set Up</h3></li>
+						<li><h4>new light scenario</h4></li>
+						<li><h4>delete light scenario</h4></li>
+						<li><h4>edit light scenario</h4></li>
+						<li><h4>new Air Condition scenario</h4></li>
+						<li><h4>delete Air Condition scenario</h4></li>
+						<li><h4>edit Air Condition scenario</h4></li>
+					</ul>
+				</div>
+				<div id="systemTools">
+					<ul><li><h3>System Tools</h3></li>
+						<li><h4>add user</h4></li>
+						<li><h4>edit user</h4></li>
+						<li><h4>delete user</h4></li>
+					</ul>
+				</div>
+			</div>
+			<div id="log"></div>
+		</div>
+	</body>
+</html>

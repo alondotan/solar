@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff" >    
+     
+     <TextView android:id="@+id/lblMessage" 
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:textSize="16dip"
+         android:layout_margin="10dip"
+         android:textColor="#000000"/>
+	<ImageView 
+	    android:id="@+id/weatherPhoto"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"/>
+	<TextView android:id="@+id/weatherText"
+		android:textSize="14sp" 
+		android:textStyle="bold" 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"/>
+    <LinearLayout     
+        android:layout_width="match_parent"
+        android:layout_weight="6"
+        android:layout_height="0dp">
+     
+     <WebView
+        android:id="@+id/webView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+        
+    </LinearLayout>
+    <LinearLayout     
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+    	android:orientation="horizontal">
+        
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:onClick="saveScenario"
+            android:src="@drawable/save_script" />
+        
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:onClick="chooseScenario"
+            android:src="@drawable/change_script" />
+        
+       <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:onClick="newTimer"
+            android:src="@drawable/time_script" />
+        
+    </LinearLayout>
+     
+</LinearLayout>
